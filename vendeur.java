@@ -1,10 +1,17 @@
-public class vendeur extends employee {
+public class vendeur extends employee{
     int tv;
-    public vendeur(String nom,int id,String adrs,int nb_h,int tv){
-        super(nom,id,adrs,nb_h);
-        this.tv=tv;
-    }
 
-    public vendeur(int i, String sabrine, String sidibouzid, int nb_h) {
-    }
-}
+    public vendeur(int id, String nom, String adrs, int nb_h) {
+        super(id, nom, adrs, nb_h);
+        this.tv=tv;
+        System.out.println("les taux vendeuse:"+this.tv);}
+        public void setTV(int tv){
+            this.tv=tv;
+        }
+        public int calculerSalaire(){
+            return tv*450;
+        }
+
+        }
+
+
